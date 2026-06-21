@@ -1,0 +1,47 @@
+/* ============================================
+   TOKENS
+============================================ */
+:root {
+    --cream: #FBF1EA;
+    --cream-deep: #F3E4D8;
+    --blush: #F2DACB;
+    --blush-soft: #F8E9DF;
+    --white: #FFFEFC;
+    --ink: #3A2A1F;
+    --ink-soft: #6E5A4A;
+    --ink-faint: #9C8772;
+    --gold: #AD8A56;
+    --gold-deep: #8A6A3D;
+    --gold-pale: #D9BD8C;
+    --rose: #C98F8F;
+    --rose-deep: #B16E6E;
+    --line: rgba(173, 138, 86, .32);
+    --shadow-soft: 0 18px 40px -20px rgba(58, 42, 31, .28);
+    --shadow-card: 0 24px 60px -30px rgba(58, 42, 31, .35);
+    --radius-lg: 28px;
+    --radius-md: 18px;
+    --radius-sm: 10px;
+    --maxw: 1180px;
+    --ease: cubic-bezier(.22, .61, .36, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: clamp(14px, 2vw, 16px);
+}
+
+body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}

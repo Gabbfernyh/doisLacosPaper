@@ -1,0 +1,878 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dois Laços | Papelaria Personalizada</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+
+<body>
+
+    <!-- ============================================
+     NAV
+============================================ -->
+    <header class="nav" id="siteNav">
+        <div class="nav-inner">
+            <a href="#inicio" class="brand">
+                <img src="src/assets/img/favicon/image.webp" alt="Dois Laços">
+                <!-- <svg viewBox="0 0 40 40" fill="none">
+                    <path d="M20 22 C20 22 8 14 8 22 C8 28 16 26 20 22 C24 26 32 28 32 22 C32 14 20 22 20 22 Z"
+                        stroke="currentColor" stroke-width="1.6" />
+                    <circle cx="20" cy="24" r="2" fill="currentColor" />
+                </svg>
+                DOIS LAÇOS -->
+            </a>
+            <nav class="nav-links">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#catalogo">Catálogo</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contato">Contato</a>
+            </nav>
+            <div class="nav-cta">
+                <a href="#contato" class="btn btn-outline btn-sm">Fale conosco</a>
+                <a href="https://wa.me/5500000000000" target="_blank" class="btn btn-primary btn-sm">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.09-1.34A9.93 9.93 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.3 1.18-1.8 1.25-.46.07-1.04.1-1.68-.1-.39-.12-.89-.28-1.53-.55-2.7-1.17-4.46-3.9-4.6-4.08-.13-.18-1.1-1.46-1.1-2.78 0-1.32.7-1.97.95-2.24.25-.27.55-.34.73-.34h.53c.17 0 .4-.07.62.47.22.55.76 1.85.83 1.98.07.13.12.29.02.46-.1.17-.16.28-.31.43-.15.15-.31.34-.45.46-.15.13-.3.27-.13.55.18.28.8 1.31 1.71 2.12 1.18 1.05 2.17 1.37 2.45 1.52.28.15.45.13.62-.05.17-.18.7-.81.89-1.09.18-.28.37-.23.62-.14.25.1 1.6.76 1.88.9.28.14.46.21.53.33.07.12.07.7-.15 1.32z" />
+                    </svg>
+                    Pedir agora
+                </a>
+            </div>
+            <button class="burger" id="burgerBtn" aria-label="Abrir menu" aria-expanded="false"
+                aria-controls="mobileMenu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+            <div class="mobile-menu-panel">
+                <div class="mobile-menu-head">
+                    <div>
+                        <span class="mobile-menu-kicker">Navegação</span>
+                        <h2>Dois Laços</h2>
+                    </div>
+                    <button class="mobile-menu-close" type="button" aria-label="Fechar menu">
+                        <span></span><span></span>
+                    </button>
+                </div>
+                <nav class="mobile-menu-links" aria-label="Menu mobile">
+                    <a href="#inicio">Início</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#catalogo">Catálogo</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#contato">Contato</a>
+                </nav>
+                <div class="mobile-menu-actions">
+                    <a href="#contato" class="btn btn-outline">Fale conosco</a>
+                    <a href="https://wa.me/5500000000000" target="_blank" class="btn btn-primary">Pedir agora</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============================================
+     HERO
+============================================ -->
+    <section class="hero" id="inicio">
+        <div class="container hero-grid">
+            <div class="hero-copy" data-reveal>
+                <div class="eyebrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                        <path
+                            d="M12 21s-7-4.35-9.5-8.5C.7 9 2 5 5.5 5c2 0 3.5 1.2 4.5 3 1-1.8 2.5-3 4.5-3 3.5 0 4.8 4 3 7.5C19 16.65 12 21 12 21z" />
+                    </svg>
+                    Papelaria personalizada feita à mão
+                </div>
+                <h1>Cada laço<br>guarda <em>uma memória.</em></h1>
+                <p class="lede">Polaroides, chaveiros e kits personalizados para eternizar os momentos que você não quer
+                    esquecer.</p>
+                <div class="hero-actions">
+                    <a href="#catalogo" class="btn btn-primary">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                            <rect x="3" y="3" width="7" height="7" rx="1" />
+                            <rect x="14" y="3" width="7" height="7" rx="1" />
+                            <rect x="3" y="14" width="7" height="7" rx="1" />
+                            <rect x="14" y="14" width="7" height="7" rx="1" />
+                        </svg>
+                        Ver catálogo
+                    </a>
+                    <a href="https://wa.me/5500000000000" target="_blank" class="btn btn-outline">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.09-1.34A9.93 9.93 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2z" />
+                        </svg>
+                        Pedir pelo WhatsApp
+                    </a>
+                </div>
+                <div class="hero-trust">
+                    <div><strong>+500</strong><span>peças entregues</span></div>
+                    <div><strong>100%</strong><span>feito à mão</span></div>
+                    <div><strong>4,9★</strong><span>avaliação das clientes</span></div>
+                </div>
+            </div>
+
+            <div class="hero-visual" data-reveal>
+                <div class="polaroid p1">
+                    <div class="shot"></div>
+                    <svg class="mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+                        <path
+                            d="M12 17s-6-3.7-8-7.2C2.6 6.8 3.6 4 6.4 4c1.7 0 3 1 3.6 2.4C10.6 5 11.9 4 13.6 4c2.8 0 3.8 2.8 2.4 5.8C14 13.3 12 17 12 17z" />
+                    </svg>
+                </div>
+                <div class="polaroid p2">
+                    <div class="shot"></div>
+                    <svg class="mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+                        <path
+                            d="M12 17s-6-3.7-8-7.2C2.6 6.8 3.6 4 6.4 4c1.7 0 3 1 3.6 2.4C10.6 5 11.9 4 13.6 4c2.8 0 3.8 2.8 2.4 5.8C14 13.3 12 17 12 17z" />
+                    </svg>
+                </div>
+                <div class="polaroid p3">
+                    <div class="shot"></div>
+                    <svg class="mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+                        <path
+                            d="M12 17s-6-3.7-8-7.2C2.6 6.8 3.6 4 6.4 4c1.7 0 3 1 3.6 2.4C10.6 5 11.9 4 13.6 4c2.8 0 3.8 2.8 2.4 5.8C14 13.3 12 17 12 17z" />
+                    </svg>
+                </div>
+                <div class="polaroid p4">
+                    <div class="shot"></div>
+                    <svg class="mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+                        <path
+                            d="M12 17s-6-3.7-8-7.2C2.6 6.8 3.6 4 6.4 4c1.7 0 3 1 3.6 2.4C10.6 5 11.9 4 13.6 4c2.8 0 3.8 2.8 2.4 5.8C14 13.3 12 17 12 17z" />
+                    </svg>
+                </div>
+
+                <svg class="ribbon-svg" viewBox="0 0 200 200">
+                    <path
+                        d="M100 105 C100 105 55 70 50 95 C46 115 75 115 100 100 C100 100 100 100 100 100 C125 115 154 115 150 95 C145 70 100 105 100 105 Z" />
+                    <circle class="heart-fill" cx="100" cy="118" r="5" />
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+     MARQUEE
+============================================ -->
+    <div class="marquee">
+        <div class="marquee-track">
+            <span><svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 21s-7-4.35-9.5-8.5C.7 9 2 5 5.5 5c2 0 3.5 1.2 4.5 3 1-1.8 2.5-3 4.5-3 3.5 0 4.8 4 3 7.5C19 16.65 12 21 12 21z" />
+                </svg> Feito com amor</span>
+            <span><svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 21s-7-4.35-9.5-8.5C.7 9 2 5 5.5 5c2 0 3.5 1.2 4.5 3 1-1.8 2.5-3 4.5-3 3.5 0 4.8 4 3 7.5C19 16.65 12 21 12 21z" />
+                </svg> Para guardar memórias</span>
+            <span><svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 21s-7-4.35-9.5-8.5C.7 9 2 5 5.5 5c2 0 3.5 1.2 4.5 3 1-1.8 2.5-3 4.5-3 3.5 0 4.8 4 3 7.5C19 16.65 12 21 12 21z" />
+                </svg> Personalizado com carinho</span>
+            <span><svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 21s-7-4.35-9.5-8.5C.7 9 2 5 5.5 5c2 0 3.5 1.2 4.5 3 1-1.8 2.5-3 4.5-3 3.5 0 4.8 4 3 7.5C19 16.65 12 21 12 21z" />
+                </svg> Ideal para presentear</span>
+            <span><svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 21s-7-4.35-9.5-8.5C.7 9 2 5 5.5 5c2 0 3.5 1.2 4.5 3 1-1.8 2.5-3 4.5-3 3.5 0 4.8 4 3 7.5C19 16.65 12 21 12 21z" />
+                </svg> Feito com amor</span>
+            <span><svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 21s-7-4.35-9.5-8.5C.7 9 2 5 5.5 5c2 0 3.5 1.2 4.5 3 1-1.8 2.5-3 4.5-3 3.5 0 4.8 4 3 7.5C19 16.65 12 21 12 21z" />
+                </svg> Para guardar memórias</span>
+            <span><svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 21s-7-4.35-9.5-8.5C.7 9 2 5 5.5 5c2 0 3.5 1.2 4.5 3 1-1.8 2.5-3 4.5-3 3.5 0 4.8 4 3 7.5C19 16.65 12 21 12 21z" />
+                </svg> Personalizado com carinho</span>
+            <span><svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 21s-7-4.35-9.5-8.5C.7 9 2 5 5.5 5c2 0 3.5 1.2 4.5 3 1-1.8 2.5-3 4.5-3 3.5 0 4.8 4 3 7.5C19 16.65 12 21 12 21z" />
+                </svg> Ideal para presentear</span>
+        </div>
+    </div>
+
+    <!-- ============================================
+     SOBRE
+============================================ -->
+    <section class="section" id="sobre">
+        <div class="container sobre-grid">
+            <div class="sobre-visual" data-reveal>
+                <div class="sobre-ring"></div>
+                <div class="sobre-core">
+                    <img src="src/assets/img/favicon/image.webp" alt="Dois Laços">
+                </div>
+            </div>
+            <div class="sobre-copy" data-reveal>
+                <div class="eyebrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                        <path d="M4 12c4-6 12-6 16 0M4 12c4 6 12 6 16 0" />
+                    </svg>
+                    Nossa história
+                </div>
+                <h2>Duas mãos, <span class="italic-serif">um só laço.</span></h2>
+                <p>A Dois Laços nasceu da vontade de transformar fotos guardadas no celular em objetos de afeto:
+                    pequenas peças que cabem na mão, mas carregam histórias inteiras.</p>
+                <p>Cada polaroide, chaveiro e caixinha é cortado, montado e revisado à mão, um pedido por vez — porque
+                    memória de verdade merece cuidado de verdade.</p>
+                <div class="value-row">
+                    <div class="value-item">
+                        <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.6">
+                                <path
+                                    d="M12 21s-7-4.35-9.5-8.5C.7 9 2 5 5.5 5c2 0 3.5 1.2 4.5 3 1-1.8 2.5-3 4.5-3 3.5 0 4.8 4 3 7.5C19 16.65 12 21 12 21z" />
+                            </svg></div>
+                        <span>Feito com amor</span>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.6">
+                                <circle cx="12" cy="12" r="8" />
+                                <path d="M12 8v4l3 2" />
+                            </svg></div>
+                        <span>Para guardar memórias</span>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.6">
+                                <path
+                                    d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8" />
+                            </svg></div>
+                        <span>Personalizado com carinho</span>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.6">
+                                <path
+                                    d="M20 7h-3.2a2.5 2.5 0 10-4.8-1.2A2.5 2.5 0 007.2 7H4a1 1 0 00-1 1v3h18V8a1 1 0 00-1-1zM4 12v7a1 1 0 001 1h14a1 1 0 001-1v-7M12 12v8" />
+                            </svg></div>
+                        <span>Ideal para presentear</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+     CATÁLOGO
+============================================ -->
+    <section class="section section--alt" id="catalogo">
+        <div class="container">
+            <div class="section-head" data-reveal>
+                <div class="eyebrow" style="justify-content:center;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                        <rect x="3" y="3" width="18" height="18" rx="2" />
+                        <path d="M3 9h18M9 21V9" />
+                    </svg>
+                    Nosso catálogo
+                </div>
+                <h2>Escolha o jeito de guardar a sua memória</h2>
+                <p>Da polaroide simples ao kit completo — tudo pensado para ficar bonito na mão e mais bonito ainda
+                    contando uma história.</p>
+            </div>
+
+            <div class="filter-row" data-reveal>
+                <button class="filter-btn active" data-target="prod-polaroides">Polaroides</button>
+                <button class="filter-btn" data-target="prod-chaveiros">Chaveiros</button>
+                <button class="filter-btn" data-target="prod-cabine">Polaroide Cabine</button>
+                <button class="filter-btn" data-target="prod-kits">Kits</button>
+                <button class="filter-btn" data-target="prod-caixas">Caixas</button>
+            </div>
+
+            <div class="product-stack" data-reveal>
+
+                <!-- POLAROIDES -->
+                <article class="product-card active" id="prod-polaroides">
+                    <div class="pc-visual">
+                        <div class="polaroid" style="position:absolute;left:6%;transform:rotate(-9deg);">
+                            <div class="shot" style="background:linear-gradient(135deg,#caa688,#8c6a4f);"></div>
+                        </div>
+                        <div class="polaroid" style="position:absolute;left:34%;transform:rotate(5deg);z-index:2;">
+                            <div class="shot" style="background:linear-gradient(135deg,#e3c2a6,#b0866a);"></div>
+                        </div>
+                    </div>
+                    <div class="pc-content">
+                        <div class="pc-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.6">
+                                <rect x="4" y="3" width="16" height="18" rx="1" />
+                                <path d="M8 7h8M8 11h8" />
+                            </svg>Mais procurado</div>
+                        <h3>Polaroides</h3>
+                        <p class="pc-desc">Sua foto revelada no clássico formato instantâneo, simples ou com ímã para
+                            colar onde quiser.</p>
+                        <div class="price-cols">
+                            <div>
+                                <div class="price-col-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.6">
+                                        <rect x="4" y="4" width="16" height="16" rx="2" />
+                                    </svg>Polaroides simples</div>
+                                <div class="price-table">
+                                    <div class="price-row"><span class="label">7x5</span><span class="amount">R$
+                                            3,00</span></div>
+                                    <div class="price-row"><span class="label">7x8</span><span class="amount">R$
+                                            4,00</span></div>
+                                    <div class="price-row"><span class="label">9x12</span><span class="amount">R$
+                                            5,00</span></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="price-col-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.6">
+                                        <circle cx="12" cy="12" r="3" />
+                                        <path d="M12 2v4M12 18v4M2 12h4M18 12h4" />
+                                    </svg>Com ímã</div>
+                                <div class="price-table">
+                                    <div class="price-row"><span class="label">7x5</span><span class="amount">R$
+                                            4,50</span></div>
+                                    <div class="price-row"><span class="label">7x8</span><span class="amount">R$
+                                            6,00</span></div>
+                                    <div class="price-row"><span class="label">9x12</span><span class="amount">R$
+                                            7,00</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="addon-note">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                                <path
+                                    d="M12 20l-1-1c-5-4.5-8-7.3-8-10.8C3 5.7 5 4 7.2 4c1.5 0 3 .8 4.8 2.6C13.8 4.8 15.3 4 16.8 4 19 4 21 5.7 21 8.2c0 3.5-3 6.3-8 10.8l-1 1z" />
+                            </svg>
+                            Acréscimo de R$ 1,00 para incluir frases ou temas
+                        </div>
+                        <a href="https://wa.me/5500000000000?text=Olá!%20Quero%20pedir%20polaroides%20personalizadas."
+                            target="_blank" class="btn btn-primary" style="margin-top:24px;">Pedir polaroides</a>
+                    </div>
+                </article>
+
+                <!-- CHAVEIROS -->
+                <article class="product-card" id="prod-chaveiros">
+                    <div class="pc-visual">
+                        <div class="keychain-pair">
+                            <div class="keychain">
+                                <div class="ring"></div>
+                                <div class="body">
+                                    <div class="shot"></div>
+                                </div>
+                                <span>Normal</span>
+                            </div>
+                            <div class="keychain heart">
+                                <div class="ring"></div>
+                                <div class="body">
+                                    <div class="shot"></div>
+                                </div>
+                                <span>Coração (acrílico)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pc-content">
+                        <div class="pc-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.6">
+                                <circle cx="12" cy="6" r="3" />
+                                <rect x="7" y="9" width="10" height="12" rx="1" />
+                            </svg>Leva para todo lugar</div>
+                        <h3>Chaveiro com foto 3x4</h3>
+                        <p class="pc-desc">Disponível no formato normal ou em acrílico no formato coração — sua memória
+                            sempre junto com você.</p>
+                        <div class="price-table">
+                            <div class="price-row"><span class="label">Formato normal<small>Acabamento
+                                        padrão</small></span><span class="amount">R$ 10,00</span></div>
+                            <div class="price-row"><span class="label">Coração acrílico<small>Acabamento
+                                        premium</small></span><span class="amount">R$ 10,00</span></div>
+                        </div>
+                        <a href="https://wa.me/5500000000000?text=Olá!%20Quero%20pedir%20um%20chaveiro%20com%20foto."
+                            target="_blank" class="btn btn-primary" style="margin-top:24px;">Pedir chaveiro</a>
+                    </div>
+                </article>
+
+                <!-- CABINE -->
+                <article class="product-card" id="prod-cabine">
+                    <div class="pc-visual">
+                        <div class="booth-strip">
+                            <div class="shot"></div>
+                            <div class="shot"></div>
+                            <div class="shot"></div>
+                            <div class="brandline">DOIS LAÇOS</div>
+                        </div>
+                    </div>
+                    <div class="pc-content">
+                        <div class="pc-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.6">
+                                <rect x="5" y="3" width="14" height="18" rx="2" />
+                                <path d="M9 7h6M9 11h6M9 15h6" />
+                            </svg>Estilo cabine de foto</div>
+                        <h3>Polaroide Cabine com ímã</h3>
+                        <p class="pc-desc">Três cliques, uma faixa só — o clima retrô da cabine de fotos, pronto para
+                            colar na geladeira.</p>
+                        <div class="price-table">
+                            <div class="price-row"><span class="label">Tira com ímã<small>Tamanho
+                                        único</small></span><span class="amount">R$ 10,00</span></div>
+                        </div>
+                        <a href="https://wa.me/5500000000000?text=Olá!%20Quero%20pedir%20uma%20polaroide%20cabine."
+                            target="_blank" class="btn btn-primary" style="margin-top:24px;">Pedir cabine</a>
+                    </div>
+                </article>
+
+                <!-- KITS -->
+                <article class="product-card" id="prod-kits">
+                    <div class="pc-visual">
+                        <div class="kit-cluster">
+                            <div class="polaroid k1">
+                                <div class="shot" style="background:linear-gradient(135deg,#caa688,#8c6a4f);"></div>
+                            </div>
+                            <div class="polaroid k2">
+                                <div class="shot" style="background:linear-gradient(135deg,#e3c2a6,#b0866a);"></div>
+                            </div>
+                            <div class="polaroid k3">
+                                <div class="shot" style="background:linear-gradient(135deg,#d8b9a3,#9c7256);"></div>
+                            </div>
+                            <div class="polaroid k4">
+                                <div class="shot" style="background:linear-gradient(135deg,#efd9c8,#c69b78);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pc-content">
+                        <div class="pc-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.6">
+                                <path
+                                    d="M12 21s-7-4.35-9.5-8.5C.7 9 2 5 5.5 5c2 0 3.5 1.2 4.5 3 1-1.8 2.5-3 4.5-3 3.5 0 4.8 4 3 7.5C19 16.65 12 21 12 21z" />
+                            </svg>Os queridinhos</div>
+                        <h3>Kits de Polaroides</h3>
+                        <p class="pc-desc">Os kits mais pedidos: quatro polaroides escolhidas por você, com ou sem ímã.
+                        </p>
+                        <div class="price-cols">
+                            <div>
+                                <div class="price-col-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.6">
+                                        <rect x="4" y="4" width="16" height="16" rx="2" />
+                                    </svg>Kit 4 polaroides 7x5 — pequeno</div>
+                                <div class="price-table">
+                                    <div class="price-row"><span class="label">Com ímã</span><span class="amount">R$
+                                            14,90</span></div>
+                                    <div class="price-row"><span class="label">Sem ímã</span><span class="amount">R$
+                                            11,00</span></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="price-col-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.6">
+                                        <rect x="4" y="4" width="16" height="16" rx="2" />
+                                    </svg>Kit 4 polaroides 7x8 — médio</div>
+                                <div class="price-table">
+                                    <div class="price-row"><span class="label">Com ímã</span><span class="amount">R$
+                                            19,90</span></div>
+                                    <div class="price-row"><span class="label">Sem ímã</span><span class="amount">R$
+                                            13,00</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/5500000000000?text=Olá!%20Quero%20pedir%20um%20kit%20de%20polaroides."
+                            target="_blank" class="btn btn-primary">Pedir kit</a>
+                    </div>
+                </article>
+
+                <!-- CAIXAS -->
+                <article class="product-card" id="prod-caixas">
+                    <div class="pc-visual">
+                        <div class="box-visual">
+                            <div class="gift-box">
+                                <div class="ribbon-h"></div>
+                                <div class="ribbon-v"></div>
+                                <div class="base"></div>
+                                <div class="lid"></div>
+                                <svg class="knot" viewBox="0 0 46 30" fill="none">
+                                    <path
+                                        d="M23 18 C23 18 8 8 6 18 C5 25 16 23 23 17 C30 23 41 25 40 18 C38 8 23 18 23 18 Z"
+                                        stroke="currentColor" stroke-width="2" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pc-content">
+                        <div class="pc-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.6">
+                                <path
+                                    d="M20 7h-3.2a2.5 2.5 0 10-4.8-1.2A2.5 2.5 0 007.2 7H4a1 1 0 00-1 1v3h18V8a1 1 0 00-1-1zM4 12v7a1 1 0 001 1h14a1 1 0 001-1v-7M12 12v8" />
+                            </svg>Para presentear</div>
+                        <h3>Caixas Personalizadas</h3>
+                        <p class="pc-desc">A casa das suas polaroides e chaveiros: caixa com nome, tema e cores à sua
+                            escolha — perfeita para presente.</p>
+                        <div class="price-table">
+                            <div class="price-row"><span class="label">Tamanho e tema<small>Personalização sob
+                                        consulta</small></span><span class="amount">Sob consulta</span></div>
+                        </div>
+                        <a href="https://wa.me/5500000000000?text=Olá!%20Quero%20uma%20caixa%20personalizada."
+                            target="_blank" class="btn btn-primary" style="margin-top:24px;">Consultar caixa</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+     QUICK ACCESS CARDS
+============================================ -->
+    <section class="section quick-access">
+        <div class="container">
+            <div class="qa-grid">
+                <!-- POLAROIDES CARD -->
+                <article class="qa-card" data-reveal>
+                    <div class="qa-visual">
+                        <div class="polaroid" style="position:absolute;left:6%;transform:rotate(-9deg);">
+                            <div class="shot" style="background:linear-gradient(135deg,#caa688,#8c6a4f);"></div>
+                        </div>
+                        <div class="polaroid" style="position:absolute;left:34%;transform:rotate(5deg);z-index:2;">
+                            <div class="shot" style="background:linear-gradient(135deg,#e3c2a6,#b0866a);"></div>
+                        </div>
+                    </div>
+                    <div class="qa-content">
+                        <h3>Polaroides</h3>
+                        <p>Suas fotos no clássico formato instantâneo. Simples ou com ímã.</p>
+                        <div class="qa-price">A partir de <strong>R$ 3,00</strong></div>
+                        <a href="https://wa.me/5500000000000?text=Olá!%20Quero%20pedir%20polaroides%20personalizadas."
+                            target="_blank" class="btn btn-primary btn-sm">Encomendar</a>
+                    </div>
+                </article>
+
+                <!-- CHAVEIROS CARD -->
+                <article class="qa-card" data-reveal>
+                    <div class="qa-visual">
+                        <div class="keychain" style="position:absolute;left:50%;transform:translateX(-50%);">
+                            <div class="ring"></div>
+                            <div class="body">
+                                <div class="shot"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qa-content">
+                        <h3>Chaveiro 3x4</h3>
+                        <p>Disponível normal ou em acrílico formato coração.</p>
+                        <div class="qa-price">A partir de <strong>R$ 10,00</strong></div>
+                        <a href="https://wa.me/5500000000000?text=Olá!%20Quero%20pedir%20um%20chaveiro%20com%20foto."
+                            target="_blank" class="btn btn-primary btn-sm">Encomendar</a>
+                    </div>
+                </article>
+
+                <!-- CAIXAS CARD -->
+                <article class="qa-card" data-reveal>
+                    <div class="qa-visual">
+                        <div class="box-visual" style="transform:scale(0.85);">
+                            <div class="gift-box">
+                                <div class="ribbon-h"></div>
+                                <div class="ribbon-v"></div>
+                                <div class="base"></div>
+                                <div class="lid"></div>
+                                <svg class="knot" viewBox="0 0 46 30" fill="none">
+                                    <path
+                                        d="M23 18 C23 18 8 8 6 18 C5 25 16 23 23 17 C30 23 41 25 40 18 C38 8 23 18 23 18 Z"
+                                        stroke="currentColor" stroke-width="2" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qa-content">
+                        <h3>Caixas Personalizadas</h3>
+                        <p>A casa das suas polaroides e chaveiros com nome e tema.</p>
+                        <div class="qa-price">Sob <strong>Consulta</strong></div>
+                        <a href="https://wa.me/5500000000000?text=Olá!%20Quero%20uma%20caixa%20personalizada."
+                            target="_blank" class="btn btn-primary btn-sm">Consultar</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+     QUICK ACCESS CARDS
+============================================ -->
+    <section class="section quick-access">
+        <div class="container">
+            <div class="qa-grid">
+                <!-- POLAROIDES CARD -->
+                <article class="qa-card" data-reveal>
+                    <div class="qa-visual">
+                        <div class="polaroid" style="position:absolute;left:6%;transform:rotate(-9deg);">
+                            <div class="shot" style="background:linear-gradient(135deg,#caa688,#8c6a4f);"></div>
+                        </div>
+                        <div class="polaroid" style="position:absolute;left:34%;transform:rotate(5deg);z-index:2;">
+                            <div class="shot" style="background:linear-gradient(135deg,#e3c2a6,#b0866a);"></div>
+                        </div>
+                    </div>
+                    <div class="qa-content">
+                        <h3>Polaroides</h3>
+                        <p>Suas fotos no clássico formato instantâneo. Simples ou com ímã.</p>
+                        <div class="qa-price">A partir de <strong>R$ 3,00</strong></div>
+                        <a href="https://wa.me/5500000000000?text=Olá!%20Quero%20pedir%20polaroides%20personalizadas."
+                            target="_blank" class="btn btn-primary btn-sm">Encomendar</a>
+                    </div>
+                </article>
+
+                <!-- CHAVEIROS CARD -->
+                <article class="qa-card" data-reveal>
+                    <div class="qa-visual">
+                        <div class="keychain" style="position:absolute;left:50%;transform:translateX(-50%);">
+                            <div class="ring"></div>
+                            <div class="body">
+                                <div class="shot"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qa-content">
+                        <h3>Chaveiro 3x4</h3>
+                        <p>Disponível normal ou em acrílico formato coração.</p>
+                        <div class="qa-price">A partir de <strong>R$ 10,00</strong></div>
+                        <a href="https://wa.me/5500000000000?text=Olá!%20Quero%20pedir%20um%20chaveiro%20com%20foto."
+                            target="_blank" class="btn btn-primary btn-sm">Encomendar</a>
+                    </div>
+                </article>
+
+                <!-- CAIXAS CARD -->
+                <article class="qa-card" data-reveal>
+                    <div class="qa-visual">
+                        <div class="box-visual" style="transform:scale(0.85);">
+                            <div class="gift-box">
+                                <div class="ribbon-h"></div>
+                                <div class="ribbon-v"></div>
+                                <div class="base"></div>
+                                <div class="lid"></div>
+                                <svg class="knot" viewBox="0 0 46 30" fill="none">
+                                    <path
+                                        d="M23 18 C23 18 8 8 6 18 C5 25 16 23 23 17 C30 23 41 25 40 18 C38 8 23 18 23 18 Z"
+                                        stroke="currentColor" stroke-width="2" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qa-content">
+                        <h3>Caixas Personalizadas</h3>
+                        <p>A casa das suas polaroides e chaveiros com nome e tema.</p>
+                        <div class="qa-price">Sob <strong>Consulta</strong></div>
+                        <a href="https://wa.me/5500000000000?text=Olá!%20Quero%20uma%20caixa%20personalizada."
+                            target="_blank" class="btn btn-primary btn-sm">Consultar</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+     FAQ
+============================================ -->
+    <section class="section" id="faq">
+        <div class="container">
+            <div class="section-head" data-reveal>
+                <div class="eyebrow" style="justify-content:center;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                        <circle cx="12" cy="12" r="9" />
+                        <path d="M9.5 9a2.5 2.5 0 115 .5c0 1.5-2.5 2-2.5 3.5M12 17h.01" />
+                    </svg>
+                    Perguntas frequentes
+                </div>
+                <h2>Tire suas dúvidas</h2>
+            </div>
+
+            <div class="faq-list" data-reveal>
+                <div class="faq-item open">
+                    <button class="faq-q"><span>Qual o prazo de produção?</span><span class="icon"></span></button>
+                    <div class="faq-a">
+                        <p>Pedidos simples ficam prontos entre 2 e 4 dias úteis. Kits e caixas personalizadas podem
+                            levar um pouco mais — combinamos o prazo exato com você na hora do pedido.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q"><span>Como envio minhas fotos?</span><span class="icon"></span></button>
+                    <div class="faq-a">
+                        <p>Depois de confirmar o pedido pelo WhatsApp, você envia as fotos em alta qualidade direto pelo
+                            chat. Se quiser, ajudamos a escolher os melhores enquadramentos para cada peça.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q"><span>Posso incluir frases ou temas?</span><span class="icon"></span></button>
+                    <div class="faq-a">
+                        <p>Sim! Frases, datas e temas especiais custam um acréscimo de R$ 1,00 por peça e deixam tudo
+                            ainda mais pessoal.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q"><span>Quais as formas de pagamento?</span><span class="icon"></span></button>
+                    <div class="faq-a">
+                        <p>Aceitamos Pix e cartão. O pagamento é combinado direto no WhatsApp após a confirmação dos
+                            itens e do prazo de entrega.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q"><span>Vocês entregam ou é só retirada?</span><span
+                            class="icon"></span></button>
+                    <div class="faq-a">
+                        <p>Trabalhamos com retirada combinada e também envio pelos Correios para todo o Brasil. O valor
+                            do frete é calculado conforme o seu CEP.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q"><span>E se eu não gostar do resultado?</span><span
+                            class="icon"></span></button>
+                    <div class="faq-a">
+                        <p>Antes da produção final, mostramos uma prévia digital do seu pedido para aprovação — assim
+                            qualquer ajuste é feito antes de imprimir.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+     CONTATO
+============================================ -->
+    <section class="section section--alt" id="contato">
+        <div class="container contato-grid">
+            <div class="contato-info" data-reveal>
+                <div class="eyebrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                        <path
+                            d="M3 8l7.9 5.3a2 2 0 002.2 0L21 8M5 5h14a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2z" />
+                    </svg>
+                    Vamos conversar
+                </div>
+                <h2>Conte sua <span class="italic-serif">história.</span></h2>
+                <p>Me diga qual memória você quer guardar e eu cuido do resto — do enquadramento ao laço final.</p>
+                <div class="contato-channels">
+                    <div class="channel">
+                        <div class="ic"><svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.09-1.34A9.93 9.93 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2z" />
+                            </svg></div>
+                        <div><strong>WhatsApp</strong><span>Resposta rápida, todos os dias</span></div>
+                    </div>
+                    <div class="channel">
+                        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                                <rect x="3" y="3" width="18" height="18" rx="5" />
+                                <circle cx="12" cy="12" r="4" />
+                                <circle cx="17.5" cy="6.5" r="1" />
+                            </svg></div>
+                        <div><strong>@doislacos.papelaria</strong><span>Veja peças prontas e novidades</span></div>
+                    </div>
+                    <div class="channel">
+                        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                                <path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 1118 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg></div>
+                        <div><strong>São Paulo, SP</strong><span>Retirada combinada ou envio</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <form class="form-card" data-reveal id="orderForm">
+                <div class="form-row">
+                    <label for="nome">Seu nome</label>
+                    <input type="text" id="nome" placeholder="Como posso te chamar?" required>
+                </div>
+                <div class="form-cols">
+                    <div class="form-row">
+                        <label for="whats">WhatsApp</label>
+                        <input type="tel" id="whats" placeholder="(00) 00000-0000" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="produto">Produto desejado</label>
+                        <select id="produto">
+                            <option>Polaroides</option>
+                            <option>Chaveiro com foto</option>
+                            <option>Polaroide cabine</option>
+                            <option>Kit de polaroides</option>
+                            <option>Caixa personalizada</option>
+                            <option>Ainda não sei</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="msg">Conte um pouco da ideia</label>
+                    <textarea id="msg"
+                        placeholder="Ex: quero um kit com 4 fotos do meu casamento, com ímã..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.09-1.34A9.93 9.93 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2z" />
+                    </svg>
+                    Enviar pedido pelo WhatsApp
+                </button>
+                <p class="form-note">Ao enviar, abrimos o WhatsApp com sua mensagem já escrita — você só confirma o
+                    envio.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- ============================================
+     FOOTER
+============================================ -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">
+                        <img src="src/assets/img/favicon/image.webp" alt="">
+                        <!-- <svg viewBox="0 0 40 40" fill="none">
+                            <path d="M20 22 C20 22 8 14 8 22 C8 28 16 26 20 22 C24 26 32 28 32 22 C32 14 20 22 20 22 Z"
+                                stroke="currentColor" stroke-width="1.6" />
+                            <circle cx="20" cy="24" r="2" fill="currentColor" />
+                        </svg> -->
+                        DOIS LAÇOS
+                    </div>
+                    <p>Papelaria personalizada feita à mão, para guardar memórias que merecem ser lembradas.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.6">
+                                <rect x="3" y="3" width="18" height="18" rx="5" />
+                                <circle cx="12" cy="12" r="4" />
+                                <circle cx="17.5" cy="6.5" r="1" />
+                            </svg></a>
+                        <a href="https://wa.me/5500000000000" target="_blank" aria-label="WhatsApp"><svg
+                                viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.09-1.34A9.93 9.93 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2z" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Navegação</h4>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#catalogo">Catálogo</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#contato">Contato</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Catálogo</h4>
+                    <a href="#prod-polaroides">Polaroides</a>
+                    <a href="#prod-chaveiros">Chaveiros</a>
+                    <a href="#prod-kits">Kits</a>
+                    <a href="#prod-caixas">Caixas</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Atendimento</h4>
+                    <a href="https://wa.me/5500000000000">WhatsApp</a>
+                    <a href="#">Instagram</a>
+                    <a href="#contato">Formulário</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 Dois Laços — Papelaria Personalizada</span>
+                <span>Feito com amor, para guardar memórias ♥</span>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5500000000000" target="_blank" class="float-wa" aria-label="Falar no WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.09-1.34A9.93 9.93 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.3 1.18-1.8 1.25-.46.07-1.04.1-1.68-.1-.39-.12-.89-.28-1.53-.55-2.7-1.17-4.46-3.9-4.6-4.08-.13-.18-1.1-1.46-1.1-2.78 0-1.32.7-1.97.95-2.24.25-.27.55-.34.73-.34h.53c.17 0 .4-.07.62.47.22.55.76 1.85.83 1.98.07.13.12.29.02.46-.1.17-.16.28-.31.43-.15.15-.31.34-.45.46-.15.13-.3.27-.13.55.18.28.8 1.31 1.71 2.12 1.18 1.05 2.17 1.37 2.45 1.52.28.15.45.13.62-.05.17-.18.7-.81.89-1.09.18-.28.37-.23.62-.14.25.1 1.6.76 1.88.9.28.14.46.21.53.33.07.12.07.7-.15 1.32z" />
+        </svg>
+    </a>
+
+    <script src="src/js/script.js"></script>
+
+</body>
+
+</html>
